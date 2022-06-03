@@ -18,3 +18,19 @@ a:hover {color: #c00;}
 #modal {
     display: none;
 }
+
+nav:first-of-type {
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+nav #navcontainer {
+    width: 90%;
+    margin: auto;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
