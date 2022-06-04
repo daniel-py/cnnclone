@@ -54,9 +54,27 @@ nav #navcontainer {
 
 #navcontainer > div:first-child > a:first-of-type {background: #c00; padding-top: .5rem;}
 
-#navcontainer .nav-more {display: inline-block;}
+#navcontainer .nav-more {
+    display: inline-block;
+    cursor: pointer;
+}
 
-#navcontainer .nav-more div{
+#navcontainer .nav-more:hover { font-weight: bold;}
+
+#navcontainer .nav-more:hover > div{
+    display: block;
+ }
+
+#navcontainer .nav-more > div{
     position: absolute;
     display: none;
+    background: black;
+}
+
+#navcontainer .nav-more > div > *{
+    display: block;
+    width: fit-content;
+    padding: 1rem;
+    border-bottom: blanchedalmond;
+    color: white;
 }
