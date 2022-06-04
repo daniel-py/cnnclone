@@ -73,8 +73,18 @@ nav #navcontainer {
 
 #navcontainer .nav-more > div > *{
     display: block;
-    width: fit-content;
-    padding: 1rem;
-    border-bottom: blanchedalmond;
+    width: ;
+    padding: 1.5rem 1rem;
+    border-bottom: .5px solid darkgray;
     color: white;
+    font-weight: 100;
+}
+
+#navcontainer button {
+    background: black;
+    font-weight: bold;
+    border: 2px solid white;
+    padding: 1rem;
+    border-radius: 10px;
+
 }
