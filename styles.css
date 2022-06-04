@@ -39,15 +39,17 @@ nav #navcontainer {
 #navcontainer > * {
     display: flex;
     justify-content: space-between;
-    gap: 1.5rem;
+    gap: 3rem;
     align-items: center;
 }
+
+#navcontainer i {cursor: pointer;}
 
 #navcontainer > * > * {
     display: inline-block;
     color: white;
     font-size: 1.7rem;
-    padding: .3rem 0;
+    padding: .1rem 0;
 }
 
 #navcontainer > div:first-child > a:first-of-type {background: #c00; padding-top: .5rem;}
