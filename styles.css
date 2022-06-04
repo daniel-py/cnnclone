@@ -33,12 +33,26 @@ nav #navcontainer {
     margin: auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+#navcontainer > * {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    align-items: center;
 }
 
 #navcontainer > * > * {
+    display: inline-block;
     color: white;
     font-size: 1.7rem;
+    padding: .3rem 0;
 }
+
+#navcontainer > div:first-child > a:first-of-type {background: #c00; padding-top: .5rem;}
+
+#navcontainer .nav-more {display: inline-block;}
 
 #navcontainer .nav-more div{
     position: absolute;
