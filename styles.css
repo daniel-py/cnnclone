@@ -93,12 +93,23 @@ nav #navcontainer {
     background: black;
     color: white;
     padding: 4rem 6rem 0;
+    font-size: 1.5rem;
 }
 
 #modal a, #modal i {color: white;}
 
-#modal > input {
+#modal > div:first-child {position: relative; border: 1px solid chartreuse;}
+
+#modal > div:first-child > input {
     width: 100%;
     padding: 1rem;
     border-radius: 5px;
+}
+
+#modal > div:first-child > a {
+    position: absolute;
+    right: 3%;
+    color: black;
+    top: 50%;
+    transform: translate(0, -50%);
 }
