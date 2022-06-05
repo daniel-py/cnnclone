@@ -61,9 +61,7 @@ nav #navcontainer {
 
 #navcontainer .nav-more:hover { font-weight: bold;}
 
-#navcontainer .nav-more:hover > div{
-    display: block;
- }
+#navcontainer .nav-more:hover > div{display: block;}
 
 #navcontainer .nav-more > div{
     position: absolute;
@@ -80,11 +78,11 @@ nav #navcontainer {
     font-weight: 100;
 }
 
-#navcontainer button {
+#navcontainer #login {
     background: black;
-    font-weight: bold;
     border: 2px solid white;
-    padding: 1rem;
+    padding: .2rem .7rem;
     border-radius: 10px;
-
 }
+
+#navcontainer #login:hover { background: rgba(255, 255, 255, .3);}
