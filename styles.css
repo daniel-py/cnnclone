@@ -105,12 +105,18 @@ nav #navcontainer {
     border-radius: 5px;
 }
 
+#modal > div:first-child > input:focus {outline: none;}
+
+#modal > div:first-child > input::placeholder {font-size: 1.5rem;}
+
 #modal > div:first-child > a {
     position: absolute;
-    right: 3%;
+    right: 1.6%;
     color: black;
     top: 50%;
     transform: translate(0, -50%);
+    white-space: pre;
+    font-weight: bold;
 }
 
 #modal i {color: black;}
