@@ -91,6 +91,7 @@ nav #navcontainer {
     left: 0%;
     right: 0%;
     background: black;
+    color: white;
     padding: 4rem 6rem 0;
     font-size: 1.5rem;
 }
@@ -120,3 +121,16 @@ nav #navcontainer {
 }
 
 #modal i {color: black;}
+
+#modal > div:nth-child(2) {
+    overflow: hidden;
+    margin: 3rem 0 5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: .5px solid darkgray;
+}
+
+#modal > div:nth-child(2) > * {
+    display: inline-block;
+    width: 14.2%;
+    paddng-right: 16rem;
+}
