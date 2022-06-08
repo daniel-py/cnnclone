@@ -153,9 +153,21 @@ nav #navcontainer {
 
 nav#topnews {
     margin-top: 5rem;
-    width: 75%;
+    width: 80%;
     margin: 6rem auto 2rem;
     font-size: 1.5rem;
 }
 
+#topnews > * {
+    padding: 0 1rem;
+    border-right: 1px solid lightgrey;
+}
+
 #topnews span {color: #c00}
+
+#topnews a:hover, #topnews a:hover span:hover {color: darkred;}
+
+#maincontent {
+    display: flex;
+    justify-content: space-between;
+}
