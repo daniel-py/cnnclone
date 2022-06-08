@@ -18,7 +18,7 @@ a:hover {color: #c00;}
 
 nav:first-of-type {
     background: black;
-    border-bottom: 1px solid wheat;
+    border-bottom: .1px solid white;
     position: fixed;
     top: 0;
     left: 0;
@@ -86,7 +86,7 @@ nav #navcontainer {
 
 #modal {
     position: fixed;
-    top: 7%;
+    top: 6%;
     bottom: 0%;
     left: 0%;
     right: 0%;
@@ -94,6 +94,7 @@ nav #navcontainer {
     color: white;
     padding: 4rem 6rem 0;
     font-size: 1.5rem;
+    display: none;
 }
 
 #modal a {color: white;}
@@ -141,7 +142,6 @@ nav #navcontainer {
 }
 #modal #bottomlinkscontainer > * {
     flex: 0 0 14.2%;
-    border: 1px solid gold;
     align-content: flex-start;
     height: fit-content;
     margin-bottom: 3rem;
