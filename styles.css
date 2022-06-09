@@ -7,6 +7,8 @@
 html {
     font-size: 62.5%;
     font-family: Calibri, sans-serif;
+    --maincolor: #c00;
+    --normfsize: 1.5rem;
 }
 
 a {
@@ -14,7 +16,7 @@ a {
     color: black;   
 }
 
-a:hover {color: #c00;}
+a:hover {color: var(--maincolor);}
 
 nav:first-of-type {
     background: black;
@@ -49,7 +51,7 @@ nav #navcontainer {
     padding: .1rem 0;
 }
 
-#navcontainer > div:first-child > a:first-of-type {background: #c00; padding-top: .5rem;}
+#navcontainer > div:first-child > a:first-of-type {background: var(--maincolor); padding-top: .5rem;}
 
 #navcontainer .nav-more {
     display: inline-block;
@@ -155,7 +157,7 @@ nav#topnews {
     margin-top: 5rem;
     width: 80%;
     margin: 6rem auto 2rem;
-    font-size: 1.5rem;
+    font-size: var(--normfsize);
 }
 
 #topnews > * {
@@ -163,7 +165,7 @@ nav#topnews {
     border-right: 1px solid lightgrey;
 }
 
-#topnews span {color: #c00}
+#topnews span {color: var(--maincolor)}
 
 #topnews a:hover, #topnews a:hover span:hover {color: darkred;}
 
@@ -173,6 +175,7 @@ nav#topnews {
     flex-wrap: wrap;
     width: 80%;
     margin: auto;
+    font-size: var(--normfsize);
 }
 
 #maincontent > * {
@@ -181,7 +184,19 @@ nav#topnews {
     height: fit-content;
 }
 
+.wider:first-of-type {position: relative;}
+
 .wider:first-of-type h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 100;
+}
+
+.wider:first-of-type span {
+    position: absolute;
+    left: .5%;
+    bottom: 0;
+    color: white;
+    background: var(--maincolor);
+    padding: 1rem;
+    font-weight: bold;
 }
