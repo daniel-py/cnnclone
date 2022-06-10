@@ -219,7 +219,6 @@ nav#topnews {
 
 #maincontent > div:nth-child(3) h2 {margin: .7rem 0;}
 
-
 #maincontent > div > h3:first-child {
     background: #eeeded;
     padding: .7rem;
@@ -227,3 +226,12 @@ nav#topnews {
 
 #maincontent > .newsnbuzz h2 {margin: .7m 0;}
 
+#maincontent .featured > div:not(:first-of-type) a {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid blue;
+}
+
+#maincontent .featured h3:not(:first-child) {
+    
+}
