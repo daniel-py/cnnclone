@@ -224,3 +224,10 @@ nav#topnews {
     padding: .7rem 0;
     border-top: 1px solid lightgrey;
 }
+
+#maincontent > div > h3:first-child {
+    background: #eeeded;
+    padding: .7rem;
+}
+
+#maincontent > .newsnbuzz >     
