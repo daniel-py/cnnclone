@@ -102,19 +102,19 @@ nav #navcontainer {
 
 #modal a, footer a {color: white;}
 
-#modal > div:first-child {position: relative;}
+#modal > div:first-child, footer > div:first-child {position: relative;}
 
-#modal > div:first-child > input {
+#modal > div:first-child > input, footer > div:first-child > input{
     width: 100%;
     padding: 1rem;
     border-radius: 5px;
 }
 
-#modal > div:first-child > input:focus {outline: none;}
+input:focus {outline: none;}
 
-#modal > div:first-child > input::placeholder {font-size: 1.5rem;}
+input::placeholder {font-size: 1.5rem;}
 
-#modal > div:first-child > a {
+#modal > div:first-child > a, footer > div:first-child > a {
     position: absolute;
     right: 1.6%;
     color: black;
@@ -124,26 +124,26 @@ nav #navcontainer {
     font-weight: bold;
 }
 
-#modal i {color: black;}
+#modal i, footer i {color: black;}
 
-#modal > div:nth-child(2) {
+#modal > div:nth-child(2), footer div:nth-child(2){
     margin: 3rem 0 5rem;
     padding-bottom: 1.5rem;
     border-bottom: .5px solid darkgray;
 }
 
-#modal > div:nth-child(2) > * {
+#modal > div:nth-child(2) > *, footer > div:nth-child(2) > * {
     display: inline-block;
     width: 14.2%;
 }
 
-#modal #bottomlinkscontainer {
+.bottomlinkscontainer {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-content: flex-start;
 }
-#modal #bottomlinkscontainer > * {
+.bottomlinkscontainer > * {
     flex: 0 0 14.2%;
     align-content: flex-start;
     height: fit-content;
