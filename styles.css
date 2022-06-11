@@ -224,14 +224,25 @@ nav#topnews {
     padding: .7rem;
 }
 
-#maincontent > .newsnbuzz h2 {margin: .7m 0;}
+#maincontent > .newsnbuzz h2 {margin: .7rem 0;}
 
-#maincontent .featured > div:not(:first-of-type) a {
+#maincontent .featured h2 {margin: .7rem 0;}
+
+#maincontent .featured > div:not(:first-of-type) > a, .spotlight > div > a {
     display: flex;
     justify-content: space-between;
-    border: 1px solid blue;
+    gap: 2rem;
+    border-top: 1px solid lightgray;
 }
 
 #maincontent .featured h3:not(:first-child) {
-    
+    font-weight: 100;
+    font-size: 2.1rem;
+}
+
+.spotlight {align-self: flex-end;}
+
+.spotlight p {
+    font-size: 1.7rem;
+    margin-top: 1rem;
 }
