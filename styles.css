@@ -269,5 +269,21 @@ footer {
 footer .bottomlinkscontainer {margin-top: 4rem;}
 
 footer #bottommenu {
-    
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid grey;
+    color: white;
+    font-size: 1.6rem;
+}
+
+#bottommenu i {color: white;}
+
+#bottommenu div > * {
+    padding: ;
+}
+
+#bottommenu span {
+    border-right: 1px solid grey;
+    border-left: 1px solid grey;
 }
