@@ -25,6 +25,7 @@ nav:first-of-type {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 5;
 }
 
 nav #navcontainer {
@@ -126,13 +127,13 @@ input::placeholder {font-size: 1.5rem;}
 
 #modal i, footer i {color: black;}
 
-#modal > div:nth-child(2), footer > div:nth-child(2){
+#modal > div:nth-child(2){
     margin: 3rem 0 5rem;
     padding-bottom: 1.5rem;
     border-bottom: .5px solid darkgray;
 }
 
-#modal > div:nth-child(2) > *, footer > div:nth-child(2) > * {
+#modal > div:nth-child(2) > * {
     display: inline-block;
     width: 14.2%;
 }
@@ -265,4 +266,8 @@ footer {
     font-size: 1.5rem;
 }
 
-footer 
+footer .bottomlinkscontainer {margin-top: 4rem;}
+
+footer #bottommenu {
+    
+}
