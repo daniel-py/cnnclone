@@ -295,7 +295,13 @@ footer #bottommenu {
     font-size: 2.3rem;
 }
 
+footer .termsofuse {margin-bottom: 2rem;}
+
 footer .termsofuse > *{
     margin: 1rem;
     font-size: 1.6rem;
+}
+
+footer #copyright {
+    margin-top: 3rem;
 }
