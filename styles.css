@@ -286,4 +286,5 @@ footer #bottommenu {
 #bottommenu span {
     border-right: 1px solid grey;
     border-left: 1px solid grey;
+    padding: 0 2rem 0;
 }
