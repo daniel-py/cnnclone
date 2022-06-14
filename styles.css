@@ -305,3 +305,9 @@ footer .termsofuse > *{
 footer #copyright {
     margin-top: 3rem;
 }
+
+@media (max-width: 1024px) {
+    nav:first-of-type #navcontainer > div > *:not(.nodiss){
+        display: none;
+    }
+}
