@@ -16,6 +16,8 @@ a {
     color: black;   
 }
 
+
+
 a:hover {color: var(--maincolor);}
 
 nav:first-of-type {
@@ -307,7 +309,19 @@ footer #copyright {
 }
 
 @media (max-width: 1024px) {
-    nav:first-of-type #navcontainer > div > *:not(.nodiss){
+    
+    #navcontainer > div > *:not(.nodiss) {
         display: none;
     }
+
+    nav#topnews {
+        width: 95%;
+        overflow: scroll;
+        white-space: nowrap;
+        font-size: 2rem;
+    }
+
+    nav#topnews::-webkit-scrollbar {display: none;}
+
+    section#maincontent {width: 95%;}
 }
