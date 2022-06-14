@@ -310,9 +310,7 @@ footer #copyright {
 
 @media (max-width: 1024px) {
     
-    #navcontainer > div > *:not(.nodiss) {
-        display: none;
-    }
+    #navcontainer > div > *:not(.nodiss) {display: none;}
 
     nav#topnews {
         width: 95%;
@@ -324,4 +322,14 @@ footer #copyright {
     nav#topnews::-webkit-scrollbar {display: none;}
 
     section#maincontent {width: 95%;}
+
+    .bottomlinkscontainer {
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+
+    .bottomlinkscontainer > * {margin-bottom: .5rem;}
+
+    .bottomlinkscontainer > div > *:not(.nodiss) {display: none;}
 }
