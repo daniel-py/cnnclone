@@ -186,7 +186,7 @@ nav#topnews {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 1rem;
-    width: 83%;
+    max-width: 83%;
     margin: 0 auto 5rem;
     font-size: var(--normfsize);
 }
@@ -268,6 +268,7 @@ footer {
     color: white;
     padding: 6rem;
     font-size: 1.5rem;
+    max-width: 100%;
 }
 
 footer .bottomlinkscontainer {margin-top: 4rem;}
@@ -316,12 +317,19 @@ footer #copyright {
         width: 95%;
         overflow: scroll;
         white-space: nowrap;
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     nav#topnews::-webkit-scrollbar {display: none;}
 
-    section#maincontent {width: 95%;}
+    section#maincontent {
+        max-width: 95%;
+        overflow: hidden;
+    }
+
+    body {overflow: hidden;}
+
+    footer
 
     .bottomlinkscontainer {
         flex-direction: column;
@@ -332,4 +340,8 @@ footer #copyright {
     .bottomlinkscontainer > * {margin-bottom: .5rem;}
 
     .bottomlinkscontainer > div > *:not(.nodiss) {display: none;}
+
+    footer .termsofuse {
+        text-align: center;
+    }
 }
