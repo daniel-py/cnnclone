@@ -284,13 +284,18 @@ footer #bottommenu {
     margin-bottom: 3rem;
 }
 
-#bottommenu span {
-    border-right: 1px solid grey;
+#bottommenu span:first-of-type {
+    margin-left: 2rem;
+    padding-left: 2rem;
     border-left: 1px solid grey;
-    padding: 0 2rem 0;
-    margin: 0 2rem;
-    display: inline-flex;
-    align-items: center;
+}
+
+#bottommenu span:not(:first-of-type) {
+    border-right: 1px solid grey;
+    padding-right: 2rem;
+    margin-right: 2rem;
+    /* display: inline-flex;
+    align-items: center; */
 }
 #bottommenu i {
     color: white;
@@ -340,6 +345,13 @@ footer #copyright {
     .bottomlinkscontainer > * {margin-bottom: .5rem;}
 
     .bottomlinkscontainer > div > *:not(.nodiss) {display: none;}
+
+    footer #bottommenu {
+        flex-direction: column;
+    }
+
+    footer #bottommenu .diss { display: none;}
+
 
     footer .termsofuse {
         text-align: center;
