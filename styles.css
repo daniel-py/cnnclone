@@ -18,6 +18,8 @@ a {
 
 img {max-width: 100%;}
 
+body {overflow-x: hidden;}
+
 a:hover {color: var(--maincolor);}
 
 nav:first-of-type {
@@ -28,7 +30,7 @@ nav:first-of-type {
     left: 0;
     right: 0;
     z-index: 5;
-    max-width: 100%;
+    overflow: hidden;
 }
 
 nav #navcontainer {
