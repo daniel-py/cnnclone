@@ -16,7 +16,11 @@ a {
     color: black;   
 }
 
-img {max-width: 100%;}
+img {
+    max-width: 100%;
+    object-fit: contain ;
+    object-position: center;
+}
 
 body {overflow-x: hidden;}
 
@@ -133,6 +137,8 @@ input::placeholder {font-size: 1.5rem;}
     font-weight: bold;
 }
 
+.appear {display: ;}
+
 #modal i, footer i {color: black;}
 
 #modal > div:nth-child(2){
@@ -216,6 +222,7 @@ nav#topnews::-webkit-scrollbar {display: none;}
 .wider:first-of-type h1 {
     font-size: 3.5rem;
     font-weight: 100;
+    text-align: center;
 }
 
 .wider:first-of-type span {
@@ -334,8 +341,6 @@ footer #copyright {
         gap: 1rem;
     }
 
-    section#maincontent > .wider:first-of-type h1 {text-align: center;}
-
     footer {overflow: hidden;}
 
     .bottomlinkscontainer {
@@ -344,20 +349,25 @@ footer #copyright {
         align-content: center;
     }
 
+    a[class="diss"] {display: none;}
+
+    .appear {display: inline;}
+
     .bottomlinkscontainer > * {margin-bottom: .5rem;}
 
     .bottomlinkscontainer > div > *:not(.nodiss) {display: none;}
 
-    footer #bottommenu {
-        flex-direction: column;
-    }
+    footer #bottommenu {flex-direction: column;}
 
     footer #bottommenu .diss { display: none;}  
 
     footer #bottommenu .nodiss {display: block !important;}
 
+    footer .termsofuse {text-align: center;}
+}
 
-    footer .termsofuse {
-        text-align: center;
-    }
+@media (max-width: 956px) {
+ section#maincontent > * {flex-basis: 45%;}
+ 
+ section#maincontent .wider {flex-basis: 100%;}
 }
