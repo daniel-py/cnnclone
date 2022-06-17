@@ -1,6 +1,6 @@
 let menu = document.querySelector("i[title='Open Menu']");
 let body = document.querySelector("body");
-let modal = document.querySelector("#modal");
+let modal = document.querySelector(".modal:first-of-type");
 check = 0;
 
 console.log(menu);
