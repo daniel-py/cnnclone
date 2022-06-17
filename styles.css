@@ -117,7 +117,9 @@ a.login:hover { background: rgba(255, 255, 255, .3);}
 
 .modal > div:first-child {position: relative;}
 
-.modal > div:first-child > input, footer > div:first-child > input{
+.modal:last-of-type > div:first-child {z-index: 0;}
+
+.modal > div:first-child > input {
     width: 100%;
     padding: 1rem;
     border-radius: 5px;
@@ -139,15 +141,15 @@ input::placeholder {font-size: 1.5rem;}
 
 .appear {display: none;}
 
-.modal i, footer i {color: black;}
+.modal i {color: black;}
 
-.modal:not(:nth-of-type(2)) > div:nth-child(2){
+.modal:first-child > div:nth-child(2){
     margin: 3rem 0 5rem;
     padding-bottom: 1.5rem;
     border-bottom: .5px solid darkgray;
 }
 
-.modal:not(:nth-of-type(2)) > div:nth-child(2) > * {
+.modal:first-child > div:nth-child(2) > * {
     display: inline-block;
     width: 14.2%;
 }
