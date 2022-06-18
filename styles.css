@@ -367,17 +367,22 @@ footer #copyright {
 
     .bottomlinkscontainer > div > *:not(.nodiss) {display: none;}
 
-    footer #bottommenu {flex-direction: column;}
+    footer #bottommenu {
+        flex-direction: column;
+        margin-top: 0;
+    }
 
     footer #bottommenu .diss { display: none;}  
 
     footer #bottommenu > div  {
+        margin-top: 2rem;
         display: flex;
         flex-direction: column;
         gap: 2rem;
     }
 
     footer #bottommenu > div > * {border: none;}
+
     footer .termsofuse {text-align: center;}
 }
 
