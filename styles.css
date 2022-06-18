@@ -318,6 +318,7 @@ footer #bottommenu {
     margin-right: 2rem;
     /* display: inline-flex;
     align-items: flex-end; */
+    align-self: flex-end;
 }
 #bottommenu i {
     color: white;
@@ -370,8 +371,13 @@ footer #copyright {
 
     footer #bottommenu .diss { display: none;}  
 
-    footer #bottommenu .nodiss {display: block !important;}
+    footer #bottommenu > div  {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
 
+    footer #bottommenu > div > * {border: none;}
     footer .termsofuse {text-align: center;}
 }
 
