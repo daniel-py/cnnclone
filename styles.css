@@ -304,13 +304,20 @@ footer #bottommenu {
     margin-bottom: 3rem;
 }
 
-#bottommenu span {
-    border-right: 1px solid grey;
+#bottommenu span:first-of-type {
     border-left: 1px solid grey;
+    margin-left: 2rem;
+    padding-left: 2rem;
+}
+
+#bottommenu .socialmedia {
+    border-right: 1px solid grey;
+    /* border-left: 1px solid grey; */
     padding: 0 2rem 0;
-    margin: 0 2rem;
-    display: inline-flex;
-    align-items: center;
+    /* margin: 0 2rem; */
+    margin-right: 2rem;
+    /* display: inline-flex;
+    align-items: flex-end; */
 }
 #bottommenu i {
     color: white;
