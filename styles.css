@@ -353,7 +353,13 @@ footer #copyright {margin-top: 3rem;}
         gap: 1rem;
     }
 
-    footer {overflow: hidden;}
+    .modal > div:first-child {
+        width: 85%;
+        margin: auto;
+    }
+
+    .modal > div:first-child > input {}
+
 
     .bottomlinkscontainer {
         flex-direction: column;
@@ -376,6 +382,7 @@ footer #copyright {margin-top: 3rem;}
         padding-top: 0;
         flex-direction: column;
         border: none;
+        margin-bottom: 1rem;
     }
 
     footer #bottommenu .diss { display: none;}  
@@ -397,7 +404,21 @@ footer #copyright {margin-top: 3rem;}
         padding: 0 !important;
     }
 
-    footer .termsofuse {text-align: center;}
+    footer .termsofuse {
+        margin-top: 0;
+        text-align: center;
+        width: 85%;
+        margin: auto;
+        font-size: 2rem;
+        font-weight: 100;
+    }
+
+    footer #copyright { 
+        width: 85%;
+        margin: auto;
+        text-align: center;
+        margin-top: 2rem;
+    }
 
 }
 
