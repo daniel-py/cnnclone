@@ -337,9 +337,7 @@ footer .termsofuse > *{
     font-size: 1.6rem;
 }
 
-footer #copyright {
-    margin-top: 3rem;
-}
+footer #copyright {margin-top: 3rem;}
 
 @media (max-width: 1024px) {
     
@@ -377,6 +375,7 @@ footer #copyright {
     footer #bottommenu {
         padding-top: 0;
         flex-direction: column;
+        border: none;
     }
 
     footer #bottommenu .diss { display: none;}  
@@ -390,7 +389,16 @@ footer #copyright {
 
     footer #bottommenu > div > * {border: none;}
 
+    footer div#bottommenu > div > span {
+        border: none !important;
+        margin: 0 !important;
+        text-align: center;
+        align-self: center;
+        padding: 0 !important;
+    }
+
     footer .termsofuse {text-align: center;}
+
 }
 
 @media (max-width: 956px) {
