@@ -311,14 +311,12 @@ footer #bottommenu {
 }
 
 #bottommenu .socialmedia {
+    display: inline-block;
     border-right: 1px solid grey;
-    /* border-left: 1px solid grey; */
     padding: 0 2rem 0;
-    /* margin: 0 2rem; */
     margin-right: 2rem;
-    /* display: inline-flex;
-    align-items: flex-end; */
     align-self: flex-end;
+    margin-bottom: -100px;
 }
 #bottommenu i {
     color: white;
