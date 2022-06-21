@@ -333,11 +333,10 @@ footer #bottommenu {
     font-size: 2.3rem;
 }
 
-footer .termsofuse {margin-bottom: 2rem;}
-
 footer .termsofuse > *{
     margin: 1rem;
     font-size: 1.6rem;
+    line-height: 4rem;
 }
 
 footer #copyright {margin-top: 3rem;}
@@ -363,7 +362,16 @@ footer #copyright {margin-top: 3rem;}
 
     .modal > div:first-of-type > a:first-of-type {display: none;}
 
-    .modal > div:first-of-type .appear {display: inline;}
+    .modal > div:first-of-type .appear {
+        display: inline;
+        position: absolute;
+        right: 1.6%;
+        color: black;
+        top: 50%;
+        transform: translate(0, -50%);
+        white-space: pre;
+        font-weight: bold;
+    }
 
     .bottomlinkscontainer {
         flex-direction: column;
@@ -416,6 +424,8 @@ footer #copyright {margin-top: 3rem;}
         font-size: 2rem;
         font-weight: 100;
     }
+
+    footer .termsofuse > * {line-height: .5rem;}
 
     footer #copyright { 
         width: 85%;
