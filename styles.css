@@ -137,9 +137,10 @@ input::placeholder {font-size: 1.5rem;}
     transform: translate(0, -50%);
     white-space: pre;
     font-weight: bold;
+
 }
 
-.appear {display: ;}
+.modal > .appear {display: none !important;}
 
 .modal i {color: black;}
 
