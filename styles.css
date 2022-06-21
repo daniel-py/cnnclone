@@ -157,6 +157,18 @@ input::placeholder {font-size: 1.5rem;}
     width: 14.2%;
 }
 
+.modal > .appear {
+    display: none;
+    text-align: center;
+    padding: 4rem;
+}
+
+.modal > .appear:nth-child(3) {
+    border: 1px solid darkgrey;
+}
+
+.modal .appear i {color: white;}
+
 .bottomlinkscontainer {
     display: flex;
     justify-content: space-between;
@@ -365,13 +377,15 @@ footer #copyright {margin-top: 3rem;}
     .modal > div:first-of-type .appear {
         display: inline;
         position: absolute;
-        right: 1.6%;
+        right: 2%;
         color: black;
-        top: 50%;
+        top: 52%;
         transform: translate(0, -50%);
         white-space: pre;
         font-weight: bold;
     }
+
+    .modal .appear {display: block;}
 
     .bottomlinkscontainer {
         flex-direction: column;
@@ -389,6 +403,8 @@ footer #copyright {margin-top: 3rem;}
     .bottomlinkscontainer > * {margin-bottom: .5rem;}
 
     .bottomlinkscontainer > div > *:not(.nodiss) {display: none;}
+
+    footer {padding: 6rem 0;}
 
     footer #bottommenu {
         padding-top: 0;
