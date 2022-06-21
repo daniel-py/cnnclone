@@ -129,7 +129,7 @@ input:focus {outline: none;}
 
 input::placeholder {font-size: 1.5rem;}
 
-.modal > div:first-child > a {
+.modal > div:first-child > a:first-of-type {
     position: absolute;
     right: 1.6%;
     color: black;
@@ -140,7 +140,9 @@ input::placeholder {font-size: 1.5rem;}
 
 }
 
-.modal > .appear {display: none !important;}
+.modal > div:first-child > a:hover { text-decoration: none;}
+
+.modal > div:first-child .appear {display: none;}
 
 .modal i {color: black;}
 
@@ -359,8 +361,9 @@ footer #copyright {margin-top: 3rem;}
         margin: auto;
     }
 
-    .modal > div:first-child > input {}
+    .modal > div:first-of-type > a:first-of-type {display: none;}
 
+    .modal > div:first-of-type .appear {display: inline;}
 
     .bottomlinkscontainer {
         flex-direction: column;
