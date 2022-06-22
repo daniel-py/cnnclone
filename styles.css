@@ -455,11 +455,12 @@ footer #copyright {margin-top: 3rem;}
         text-align: center;
         margin-top: 2rem;
     }
-
 }
 
 @media (max-width: 956px) {
     section#maincontent > * {flex-basis: 45%;}
+
+    section#maincontent .wider {flex-basis: 100%;}
 
     section#maincontent > div:first-of-type {order: 1;}
 
@@ -472,6 +473,15 @@ footer #copyright {margin-top: 3rem;}
     section#maincontent > div:nth-of-type(5) {order: 4;}
 
     section#maincontent > div:nth-of-type(6) {order: 6;}
- 
-    section#maincontent .wider {flex-basis: 100%;}
+}
+
+@media (max-width: 500px) {
+    section#maincontent > * {flex-basis: 100%;}
+
+    section#maincontent > div img {
+        margin: auto;
+        text-align: center;
+        border: 2px solid orange;
+    }
+
 }
