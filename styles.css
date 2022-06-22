@@ -161,10 +161,16 @@ input::placeholder {font-size: 1.5rem;}
     display: none;
     text-align: center;
     padding: 4rem;
+    font-size: 2rem;
+}
+
+.modal > .appear:nth-child(2) > p {
+    margin-top: 1rem;
 }
 
 .modal > .appear:nth-child(3) {
     border: 1px solid darkgrey;
+    border-style: solid none;
 }
 
 .modal .appear i {color: white;}
@@ -368,7 +374,7 @@ footer #copyright {margin-top: 3rem;}
     }
 
     .modal > div:first-child {
-        width: 85%;
+        width: 65%;
         margin: auto;
     }
 
@@ -404,7 +410,7 @@ footer #copyright {margin-top: 3rem;}
 
     .bottomlinkscontainer > div > *:not(.nodiss) {display: none;}
 
-    footer {padding: 6rem 0;}
+    footer {padding: 6rem 0 3rem;}
 
     footer #bottommenu {
         padding-top: 0;
@@ -435,7 +441,7 @@ footer #copyright {margin-top: 3rem;}
     footer .termsofuse {
         margin-top: 0;
         text-align: center;
-        width: 85%;
+        width: 65%;
         margin: auto;
         font-size: 2rem;
         font-weight: 100;
@@ -444,7 +450,7 @@ footer #copyright {margin-top: 3rem;}
     footer .termsofuse > * {line-height: .5rem;}
 
     footer #copyright { 
-        width: 85%;
+        width: 65%;
         margin: auto;
         text-align: center;
         margin-top: 2rem;
