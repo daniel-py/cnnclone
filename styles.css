@@ -460,6 +460,18 @@ footer #copyright {margin-top: 3rem;}
 
 @media (max-width: 956px) {
     section#maincontent > * {flex-basis: 45%;}
+
+    section#maincontent > div:first-of-type {order: 1;}
+
+    section#maincontent > div:nth-of-type(2) {order: 2;}
+
+    section#maincontent > div:nth-of-type(3) {order: 3;}
+
+    section#maincontent > div:nth-of-type(4) {order: 5;}
+
+    section#maincontent > div:nth-of-type(5) {order: 4;}
+
+    section#maincontent > div:nth-of-type(6) {order: 6;}
  
     section#maincontent .wider {flex-basis: 100%;}
 }
