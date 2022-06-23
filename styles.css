@@ -146,13 +146,13 @@ input::placeholder {font-size: 1.5rem;}
 
 .modal i {color: black;}
 
-.modal:first-child > div:nth-child(2){
+.modal:first-child > div:nth-child(3){
     margin: 3rem 0 5rem;
     padding-bottom: 1.5rem;
     border-bottom: .5px solid darkgray;
 }
 
-.modal:first-child > div:nth-child(2) > * {
+.modal:first-child > div:nth-child(3) > * {
     display: inline-block;
     width: 14.2%;
 }
@@ -356,6 +356,7 @@ footer .termsofuse > *{
 
 footer #copyright {margin-top: 3rem;}
 
+
 @media (max-width: 1024px) {
     
     #navcontainer > div > *:not(.nodiss) {display: none;}
@@ -371,7 +372,7 @@ footer #copyright {margin-top: 3rem;}
     }
 
     .modal > div:first-child {
-        width: 65%;
+        width: 90%;
         margin: auto;
     }
 
@@ -461,9 +462,7 @@ footer #copyright {margin-top: 3rem;}
 
     section#maincontent .wider {flex-basis: 100%;}
 
-    section#maincontent img:not(.fsize) {
-        width: 100%;
-    }
+    section#maincontent img:not(.fsize) {width: 100%;}
 
     section#maincontent > div:first-of-type {order: 1;}
 
