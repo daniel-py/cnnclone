@@ -100,9 +100,9 @@ a.login:hover {text-decoration: none;}
 
 a.login:hover { background: rgba(255, 255, 255, .3);}
 
-.modal:first-child {
+.menu-modal {
     position: fixed;
-    top: 6%;
+    top: 4%;
     bottom: 0%;
     left: 0%;
     right: 0%;
@@ -111,6 +111,18 @@ a.login:hover { background: rgba(255, 255, 255, .3);}
     padding: 4rem 6rem 0;
     font-size: 1.5rem;
     display: none;
+    z-index: 5;
+}
+
+.menu-modal > .edition{
+    margin: 3rem 0 5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: .5px solid darkgray;
+}
+
+.menu-modal > .edition > * {
+    display: inline-block;
+    width: 14.2%;
 }
 
 .modal a {color: white;}
@@ -145,17 +157,6 @@ input::placeholder {font-size: 1.5rem;}
 .modal > div:first-child .appear {display: none;}
 
 .modal i {color: black;}
-
-.modal:first-child > .edition{
-    margin: 3rem 0 5rem;
-    padding-bottom: 1.5rem;
-    border-bottom: .5px solid darkgray;
-}
-
-.modal:first-child > .edition > * {
-    display: inline-block;
-    width: 14.2%;
-}
 
 .modal > .appear {
     display: none;
@@ -369,6 +370,10 @@ footer #copyright {margin-top: 3rem;}
     section#maincontent {
         width: 95%;
         gap: 1rem;
+    }
+
+    .menu-modal {
+        overflow-y: scroll;
     }
 
     .modal > div:first-child {
