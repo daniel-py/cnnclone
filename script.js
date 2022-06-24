@@ -14,7 +14,7 @@ docReady(function() {
     let menu = document.querySelector("i[title='Open Menu']");
     let body = document.querySelector("body");
     let modal = document.querySelector("section:first-child");
-    check = 0;
+    let check = 0;
 
     console.log(menu);
 
@@ -31,6 +31,14 @@ docReady(function() {
             check = 0;
         }
     });
+
+    let dded = document.querySelector("#ddedition");
+    let check2 = 0;
+
+    dded.addEventListener('click', function(e){
+        if (check2 === 0){
+            dded.className = 
+        }
+    })
 });
 
-//window.onload="myFunction()";
