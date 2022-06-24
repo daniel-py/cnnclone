@@ -154,7 +154,7 @@ input::placeholder {font-size: 1.5rem;}
 
 .modal > div:first-child > a:hover { text-decoration: none;}
 
-.modal > div:first-child .appear {display: none;}
+.modal .appear {display: none;}
 
 .modal i {color: black;}
 
@@ -375,6 +375,8 @@ footer #copyright {margin-top: 3rem;}
     .menu-modal {
         overflow-y: scroll;
     }
+
+    .menu-modal .diss {display: none;}
 
     .modal > div:first-child {
         width: 90%;
