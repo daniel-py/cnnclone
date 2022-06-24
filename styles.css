@@ -125,7 +125,7 @@ a.login:hover { background: rgba(255, 255, 255, .3);}
     width: 14.2%;
 }
 
-.menu-modal .dropedition:hover .dropdown {display: block;}
+/* .menu-modal .dropedition:hover .dropdown {display: block;} */
 
 .dropedition {
     padding: 2rem !important;

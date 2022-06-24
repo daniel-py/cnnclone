@@ -32,12 +32,19 @@ docReady(function() {
         }
     });
 
-    let dded = document.querySelector("#ddedition");
+    let ddtrigger = document.querySelector("#ddedition");
+    let ddcontent = document.querySelector(".dropedition .dropdown");
     let check2 = 0;
 
-    dded.addEventListener('click', function(e){
+    ddtrigger.addEventListener('click', function(e){
         if (check2 === 0){
-            dded.className = 
+            console.log("ddtrigger has been clicked")
+            ddcontent.style.display = "block";
+            check = 1;
+        } else {
+            console.log("ddtrigger has been clicked again")
+            ddcontent.style.display = "none";
+            chack = 0l
         }
     })
 });
