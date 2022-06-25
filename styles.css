@@ -324,7 +324,7 @@ footer {
 
 footer .bottomlinkscontainer {margin-top: 4rem;}
 
-footer #bottommenu {
+.modal .bottommenu {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -335,27 +335,27 @@ footer #bottommenu {
     margin-bottom: 3rem;
 }
 
-#bottommenu span:first-of-type {
+.bottommenu span:first-of-type {
     border-left: 1px solid grey;
     margin-left: 2rem;
     padding-left: 2rem;
 }
 
-#bottommenu > div {
+.followcnn {
     display: inline-flex;
     align-items: center;
 }
 
-#bottommenu > div > *{ height: 100%;}
+.followcnn > *{ height: 100%;}
 
-#bottommenu .socialmedia {
+.followcnn .socialmedia {
     display: inline-block;
     border-right: 1px solid grey;
     padding: 0 2rem 0;
     margin-right: 2rem;
     align-self: flex-end;
 }
-#bottommenu i {
+.followcnn i {
     color: white;
     margin: 0 1rem;
     font-size: 2.3rem;
@@ -384,9 +384,12 @@ footer #copyright {margin-top: 3rem;}
         gap: 1rem;
     }
 
-    .menu-modal {
-        overflow-y: scroll;
-    }
+    .menu-modal {overflow-y: scroll;}
+
+    /* .menu-modal div.bottommenu {
+        display: flex;
+        justify-content: center;
+    } */
 
     .menu-modal .diss {display: none;}
 
@@ -429,25 +432,25 @@ footer #copyright {margin-top: 3rem;}
 
     footer {padding: 6rem 2rem 3rem;}
 
-    footer #bottommenu {
+    .modal .bottommenu {
         padding-top: 0;
         flex-direction: column;
         border: none;
         margin-bottom: 1rem;
     }
 
-    footer #bottommenu .diss { display: none;}  
+    .modal .bottommenu .diss { display: none;}  
 
-    footer #bottommenu > div  {
+    .modal .followcnn  {
         margin-top: 2rem;
         display: flex;
         flex-direction: column;
         gap: 2rem;
     }
 
-    footer #bottommenu > div > * {border: none;}
+    .modal .followcnn > * {border: none;}
 
-    footer div#bottommenu > div > span {
+    .modal .followcnn > span {
         border: none !important;
         margin: 0 !important;
         text-align: center;
