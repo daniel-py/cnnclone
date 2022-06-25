@@ -108,7 +108,7 @@ a.login:hover { background: rgba(255, 255, 255, .3);}
     right: 0%;
     background: black;
     color: white;
-    padding: 4rem 6rem 0;
+    padding: 4rem 2rem 0;
     font-size: 1.5rem;
     display: none;
     z-index: 5;
@@ -128,6 +128,11 @@ a.login:hover { background: rgba(255, 255, 255, .3);}
 .dropedition {
     padding: 2rem !important;
     margin-bottom: 2rem;
+}
+
+#ddedition i {
+    font-size: 1.5rem; 
+    margin-left: .5rem;
 }
 
 .menu-modal .dropedition .dropdown {margin-top: 1.5rem;}
@@ -422,7 +427,7 @@ footer #copyright {margin-top: 3rem;}
 
     .bottomlinkscontainer > div > *:not(.nodiss) {display: none;}
 
-    footer {padding: 6rem 0 3rem;}
+    footer {padding: 6rem 2rem 3rem;}
 
     footer #bottommenu {
         padding-top: 0;
