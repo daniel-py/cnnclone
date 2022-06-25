@@ -20,12 +20,12 @@ docReady(function() {
 
     menu.addEventListener('click', function(e){
         if (check === 0){
-            menu.className = "fa-solid fa-xmark"
+            menu.className = "nodiss fa-solid fa-xmark"
             body.style.overflow = "hidden";
             modal.style.display = "block";
             check = 1;
         } else {
-            menu.className = "fa-solid fa-bars";
+            menu.className = "nodiss fa-solid fa-bars";
             body.style.overflow = "auto";
             modal.style.display = "none";
             check = 0;
