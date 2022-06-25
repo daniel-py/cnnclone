@@ -33,19 +33,22 @@ docReady(function() {
     });
 
     let ddtrigger = document.querySelector("#ddedition");
+    let angle = document.querySelector("#ddedition i");
     let ddcontent = document.querySelector(".dropedition .dropdown");
     let check2 = 0;
 
     ddtrigger.addEventListener('click', function(e){
         if (check2 === 0){
-            console.log("ddtrigger has been clicked")
+            console.log("ddtrigger has been clicked");
+            angle.className = "fa-solid fa-angle-up";
             ddcontent.style.display = "block";
-            check = 1;
+            check2 = 1;
         } else {
-            console.log("ddtrigger has been clicked again")
+            console.log("ddtrigger has been clicked again");
+            angle.className = "fa-solid fa-angle-down";
             ddcontent.style.display = "none";
-            chack = 0l
+            check2 = 0;
         }
-    })
+    });
 });
 
