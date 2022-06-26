@@ -163,7 +163,6 @@ input::placeholder {font-size: 1.5rem;}
     transform: translate(0, -50%);
     white-space: pre;
     font-weight: bold;
-
 }
 
 .modal > div:first-child > a:hover { text-decoration: none;}
@@ -172,8 +171,7 @@ input::placeholder {font-size: 1.5rem;}
 
 .modal i {color: black;}
 
-.modal > .appear {
-    display: none;
+.modal > .appear:not(.followcnn) {
     text-align: center;
     padding: 4rem;
     font-size: 2rem;
@@ -187,6 +185,12 @@ input::placeholder {font-size: 1.5rem;}
 }
 
 .modal .appear i {color: white;}
+
+hr.appear.hrabovefollowcnn {
+    padding: 0 !important;
+    width: 5%;
+    margin: auto;
+}
 
 .bottomlinkscontainer {
     display: flex;
@@ -346,7 +350,7 @@ footer .bottomlinkscontainer {margin-top: 4rem;}
     align-items: center;
 }
 
-.followcnn > *{ height: 100%;}
+.followcnn > *{height: 100%;}
 
 .followcnn .socialmedia {
     display: inline-block;
@@ -386,12 +390,9 @@ footer #copyright {margin-top: 3rem;}
 
     .menu-modal {overflow-y: scroll;}
 
-    /* .menu-modal div.bottommenu {
-        display: flex;
-        justify-content: center;
-    } */
-
     .menu-modal .diss {display: none;}
+
+    .menu-modal .followcnn {padding: 1rem 0 4rem;}
 
     .modal > div:first-child {
         width: 90%;
